@@ -85,7 +85,7 @@ Multimodal ML pipeline predicting pedestrian path-choice behavior from visual at
 
 ## 🎓 Education
 
-**UCL** — MSc Computer Science & Technology (Architectural Computation) · *Distinction* · 2024–2025  
+**UCL** — MSc Architectural Computation · *Merit* · 2024–2025  
 **SCAU** — BEng Landscape Architecture · *GPA 90.41/100 · Top 1%* · 2020–2024
 
 ---
