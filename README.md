@@ -1,4 +1,4 @@
-# Hey, I'm Rui (古锐) 👋
+# Hey, I'm Rui 👋
 
 **Computational Designer → AI Engineer**
 
