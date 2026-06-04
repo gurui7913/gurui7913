@@ -19,17 +19,32 @@ Now building with Python — multi-objective optimization, reinforcement learnin
 
 ## 🏆 Key Projects
 
-### 🌿 Multi-Objective Green Space Layout Optimizer
-*Individual Project · Apr 2025 – May 2025*
+### 👁️ Eye-Tracking Urban Navigation Attention Prediction
+*Team Lead · Oct 2024 – Dec 2024*
 
-Urban green space planning tool for aging communities driven by NSGA-II.
+Multimodal ML pipeline predicting pedestrian path-choice behavior from visual attention data.
 
-- Binary chromosome encoding on 5×5m grid units
-- 4 independent objectives: green view ratio, area compliance, spatial distribution, connectivity
-- Pareto front extraction via Euclidean distance minimization from ideal point
-- **Results:** 10 Pareto-optimal layouts · Green view rate ↑28% · Space utilization ↑20%
+- CLIP embeddings (512-dim) for eye-tracking heatmaps + voice descriptions; cosine similarity ~0.25
+- SMOTE oversampling + Random Forest classifier for path decision prediction
+- Fine-tuned ViT for attention heatmap distribution prediction
+- **Results:** Path decision accuracy 80% (+30% vs random baseline) · Identified 5 key attention-capturing elements: buildings, roads, trees, vehicles, signage
 
-`Python` `pymoo` `NSGA-II` `Spatial Computing`
+`Python` `CLIP` `ViT` `scikit-learn` `Random Forest` `SMOTE`
+
+---
+
+### 🏙️ Urban Safety Perception Modelling (Street-View + Space Syntax)
+*Dissertation Project · Jun 2025 – Sep 2025*
+
+Perception-driven urban analysis model linking spatial configuration to crowd-sourced safety scores in London.
+
+- Integrated Space Syntax metrics (INT2K, CH2K) with SegFormer-B0 semantic segmentation (green view ratio, sky visibility) across ~900 London locations
+- Trained on Place Pulse 2.0 pairwise comparison data (TrueSkill-scored safety perception)
+- Discovered inverted-U nonlinear thresholds: mid-range integration and greenery correlate with higher safety; extremes suppress it
+- Detected cross-modal interaction effects between spatial connectivity and visual exposure via polynomial regression
+- **Results:** Polynomial model R² ↑ ~5× over linear baseline · INT2K identified as dominant predictor (r = 0.072 vs CH2K ≈ 0)
+
+`Python` `SegFormer` `SpaceSyntax` `Semantic Segmentation`
 
 ---
 
@@ -48,17 +63,17 @@ Multi-agent reinforcement learning system for emergent cooperation in spatial ta
 
 ---
 
-### 👁️ Eye-Tracking Urban Navigation Attention Prediction
-*Team Lead · Oct 2024 – Dec 2024*
+### 🌿 Multi-Objective Green Space Layout Optimizer
+*Individual Project · Apr 2025 – May 2025*
 
-Multimodal ML pipeline predicting pedestrian path-choice behavior from visual attention data.
+Urban green space planning tool for aging communities driven by NSGA-II.
 
-- CLIP embeddings (512-dim) for eye-tracking heatmaps + voice descriptions; cosine similarity ~0.25
-- SMOTE oversampling + Random Forest classifier for path decision prediction
-- Fine-tuned ViT for attention heatmap distribution prediction
-- **Results:** Path decision accuracy 80% (+30% vs random baseline) · Identified 5 key attention-capturing elements: buildings, roads, trees, vehicles, signage
+- Binary chromosome encoding on 5×5m grid units
+- 4 independent objectives: green view ratio, area compliance, spatial distribution, connectivity
+- Pareto front extraction via Euclidean distance minimization from ideal point
+- **Results:** 10 Pareto-optimal layouts · Green view rate ↑28% · Space utilization ↑20%
 
-`Python` `CLIP` `ViT` `scikit-learn` `Random Forest` `SMOTE`
+`Python` `pymoo` `NSGA-II` `Spatial Computing`
 
 ---
 
@@ -97,4 +112,4 @@ Multimodal ML pipeline predicting pedestrian path-choice behavior from visual at
 
 ---
 
-🎯 **Seeking roles in:** AI Engineering · Spatial Computing · Digital Twin · LLM Applications  
+🎯 **Seeking roles in:** PhD in Cognitive Spatial Computing · Digital Twin · LLM-based Agent Simulation 
