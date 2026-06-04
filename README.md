@@ -1,6 +1,6 @@
 # Hey, I'm Rui 👋
 
-**Computational Designer → AI Engineer**
+**Computational Designer**
 
 MSc Architectural Computation @ UCL · BEng Landscape Architecture @ SCAU (Top 1%)  
 Background in parametric design and spatial optimization.  
