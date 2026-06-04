@@ -42,7 +42,7 @@ Perception-driven urban analysis model linking spatial configuration to crowd-so
 - Trained on Place Pulse 2.0 pairwise comparison data (TrueSkill-scored safety perception)
 - Discovered inverted-U nonlinear thresholds: mid-range integration and greenery correlate with higher safety; extremes suppress it
 - Detected cross-modal interaction effects between spatial connectivity and visual exposure via polynomial regression
-- **Results:** Polynomial model R² ↑ ~5× over linear baseline · INT2K identified as dominant predictor (r = 0.072 vs CH2K ≈ 0)
+- **Results:** Polynomial model R² ↑ ~5× over linear baseline · INT2K identified as dominant predictor
 
 `Python` `SegFormer` `SpaceSyntax` `Semantic Segmentation`
 
