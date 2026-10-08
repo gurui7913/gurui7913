@@ -1,115 +1,76 @@
-# Hey, I'm Rui 👋
+# Hi, I'm Rui Gu
 
-**Computational Designer**
+**Urban Computing · Spatial Cognition · Visual AI for Human-Centred Cities**
 
-MSc Architectural Computation @ UCL · BEng Landscape Architecture @ SCAU (Top 1%)  
-Background in parametric design and spatial optimization.  
-Now building with Python — multi-objective optimization, reinforcement learning, and multimodal ML systems.
+I investigate how people perceive urban environments and make spatial decisions, and how computational models can help us understand those processes. My background spans landscape architecture and architectural computation, with work connecting street-view visual AI, human behavioural evidence, and agent-based simulation.
 
----
+I hold an MSc in Architectural Computation from **University College London** and a BEng in Landscape Architecture from **South China Agricultural University**.
 
-## 🚀 What I Do
+[Email](mailto:rui.gu.24@alumni.ucl.ac.uk) · [LinkedIn](https://www.linkedin.com/in/rui-g-a47929292/)
 
-- **Spatial Optimization** → Multi-objective genetic algorithms for urban design problems
-- **Reinforcement Learning** → Multi-agent simulation, reward shaping, emergent behavior
-- **Multimodal ML** → Eye-tracking + vision-language models for spatial behavior analysis
-- **Computational Design** → Parametric & generative workflows with Grasshopper, C#
+## Current Research
 
----
+### Urban wayfinding in layered cities
 
-## 🏆 Key Projects
+My proposed research explores how pedestrians navigate between street-level, elevated, underground, and building-based networks, with Hong Kong as the intended empirical context. I am particularly interested in **sequential imageability**: how environmental cues support orientation across a journey, and what happens when those cues disappear or become ambiguous at spatial transitions.
 
-### 👁️ Eye-Tracking Urban Navigation Attention Prediction
-*Team Lead · Oct 2024 – Dec 2024*
+The aim is to connect cue continuity with uncertainty, hesitation, and route revision, then evaluate whether VLM-agent simulations can help diagnose wayfinding problems and compare design interventions against human evidence.
 
-Multimodal ML pipeline predicting pedestrian path-choice behavior from visual attention data.
+### Vision-language models and urban preferences
 
-- CLIP embeddings (512-dim) for eye-tracking heatmaps + voice descriptions; cosine similarity ~0.25
-- SMOTE oversampling + Random Forest classifier for path decision prediction
-- Fine-tuned ViT for attention heatmap distribution prediction
-- **Results:** Path decision accuracy 80% (+30% vs random baseline) · Identified 5 key attention-capturing elements: buildings, roads, trees, vehicles, signage
+I am developing an experimental workflow to investigate whether vision-language models express coherent preferences over street-view images. The work connects pairwise image comparisons, presentation-order controls, and utility modelling to examine the consistency of model judgements about urban environments.
 
-`Python` `CLIP` `ViT` `scikit-learn` `Random Forest` `SMOTE`
+This is ongoing experimental work. A broader question guiding my research is **when, and under what human-grounded validation conditions, VLM agents can inform urban design**.
 
----
+## Selected Work
 
-### 🏙️ Urban Safety Perception Modelling (Street-View + Space Syntax)
-*Dissertation Project · Jun 2025 – Sep 2025*
+### Sensing Space: Multi-Modal Urban Emotion Analytics
+*Digital FUTURES workshop · Group project · 2026*
 
-Perception-driven urban analysis model linking spatial configuration to crowd-sourced safety scores in London.
+Connected walking EEG, GPS tracks, street-view imagery, semantic segmentation, and pedestrian proximity in a multimodal urban-analysis workflow. My work included processing **2,842 timestamped observations**, Random Forest modelling with SHAP interpretation, and integrating outputs into Rhino/Grasshopper visualisations and LLM-agent-supported simulations.
 
-- Integrated Space Syntax metrics (INT2K, CH2K) with SegFormer-B0 semantic segmentation (green view ratio, sky visibility) across ~900 London locations
-- Trained on Place Pulse 2.0 pairwise comparison data (TrueSkill-scored safety perception)
-- Discovered inverted-U nonlinear thresholds: mid-range integration and greenery correlate with higher safety; extremes suppress it
-- Detected cross-modal interaction effects between spatial connectivity and visual exposure via polynomial regression
-- **Results:** Polynomial model R² ↑ ~5× over linear baseline · INT2K identified as dominant predictor
+### [Urban Safety Perception Modelling](https://github.com/gurui7913/AC_UrbanSafetyPerceptionModelling)
+*UCL MSc dissertation · Individual project · 2025*
 
-`Python` `SegFormer` `SpaceSyntax` `Semantic Segmentation`
+Combined Space Syntax network metrics, SegFormer street-view semantics, and Place Pulse safety-perception scores for **900 London locations**. Explored nonlinear relationships and interactions between spatial configuration, visible greenery, sky visibility, and perceived safety.
 
----
+`Python` `SegFormer` `Space Syntax` `Statistical Modelling`
 
-### 🤖 Multi-Agent Spatial Collaboration Simulation (RL)
-*Team Member · Jan 2025 – Mar 2025*
+### [Track the Eyes, Track the Mind](https://github.com/gurui7913/AC_PedestrianNavigationDecisionMakingSystem)
+*UCL Digital Studio · Team lead · 2024*
 
-Multi-agent reinforcement learning system for emergent cooperation in spatial tasks.
+Led a pilot wayfinding study with **five participants and 13 static street-view scenes** near King's Cross. Organised gaze heatmaps, route choices, and verbal rationales, and guided exploratory analysis using pretrained CLIP features and Random Forest classification.
 
-- Built on Unity ML-Agents with MA-POCA (Centralized Critic + Decentralized Actor + Attention)
-- Designed piecewise reward function with weight-based cooperation thresholds
-- Developed `BlockContributionTracker`: collision force logging + time-window decay for indirect force attribution
-- Replaced piecewise threshold with continuous formula to eliminate gradient cliffs
-- **Results:** Cumulative reward ↑ ~3 → ~11 · Convergence steps reduced from 6–10M → 2–7M
+`Eye-Tracking` `CLIP` `Multimodal Analysis` `Wayfinding`
 
-`Python` `Unity ML-Agents` `MA-POCA` `Reinforcement Learning`
+### [Multi-Agent Cooperation in Unity](https://github.com/gurui7913/AC_Unity_CollaborativeMLAgents_PushBlock)
+*UCL Digital Ecologies · Group project · 2025*
 
----
+Explored how reward rules can encourage coordination in Unity's Cooperative Push Block environment. My contributions covered cooperation hypotheses, custom group rewards, C# contribution tracking, and an absolute-deviation reward formulation.
 
-### 🌿 Multi-Objective Green Space Layout Optimizer
-*Individual Project · Apr 2025 – May 2025*
+`C#` `Unity ML-Agents` `MA-POCA` `Reward Design`
 
-Urban green space planning tool for aging communities driven by NSGA-II.
+### [Comfort in Sight: Green Space Optimisation](https://github.com/gurui7913/AC_GreenSpaceOptimization)
+*UCL Morphogenetic Programming · Individual project · 2025*
 
-- Binary chromosome encoding on 5×5m grid units
-- 4 independent objectives: green view ratio, area compliance, spatial distribution, connectivity
-- Pareto front extraction via Euclidean distance minimization from ideal point
-- **Results:** 10 Pareto-optimal layouts · Green view rate ↑28% · Space utilization ↑20%
+Explored green visibility and area trade-offs through Rhino/Grasshopper and C# coursework. The repository also includes a separate Python NSGA-II demonstration on a synthetic grid, illustrating multi-objective layout optimisation.
 
-`Python` `pymoo` `NSGA-II` `Spatial Computing`
+`Rhino` `Grasshopper` `C#` `Python` `NSGA-II`
 
----
+## Methods & Tools
 
-## 🛠️ Tech Stack
+| Area | Methods and tools |
+| --- | --- |
+| Visual & multimodal AI | PyTorch, scikit-learn, CLIP, SegFormer, YOLOv5, VLM experimentation |
+| Human & urban evidence | Eye-tracking, EEG/GPS integration, street-view analysis, statistical modelling |
+| Spatial analysis | QGIS, DepthmapX, Space Syntax, GIS-based urban morphology |
+| Design & simulation | Rhino, Grasshopper, Unity ML-Agents, multi-objective optimisation |
+| Programming | Python, C# |
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=c-sharp&logoColor=white)
-![Unity](https://img.shields.io/badge/Unity-000000?style=flat&logo=unity&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+## Background
 
-**Computational Design:** Grasshopper · Rhino · Parametric Modeling  
-**Learning:** LangChain · LLM APIs · RAG · FastAPI
+- **University College London** — MSc Architectural Computation, Merit · 2024–2025
+- **South China Agricultural University** — BEng Landscape Architecture, 90.41/100, Top 1% · 2020–2024
+- **Urban Environment Research Intern**, Guangzhou Dushi Intelligent Technology Co., Ltd. · 2023–2024. Supported street-view environmental analysis and a human-evaluation interface for urban perception research.
 
----
-
-## 📜 Certifications
-
-- **PCEP** — Python Institute Certified Entry-Level Python Programmer
-- **Machine Learning** — DeepLearning.AI
-
----
-
-## 🎓 Education
-
-**UCL** — MSc Architectural Computation · *Merit* · 2024–2025  
-**SCAU** — BEng Landscape Architecture · *GPA 90.41/100 · Top 1%* · 2020–2024
-
----
-
-## 📡 Let's Connect
-
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:rui.gu0318@outlook.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/gurui7913)
-
----
-
-🎯 **Seeking roles in:** PhD in Cognitive Spatial Computing · Digital Twin · LLM-based Agent Simulation 
+I welcome conversations about PhD research and collaborations in **urban wayfinding, spatial cognition, human-grounded VLM evaluation, and computational urban design**.
