@@ -13,7 +13,7 @@ I explore how people **perceive cities, find their way, and make spatial decisio
 ## 🚀 Selected Work
 
 ### 🧠 Sensing Space: Multi-Modal Urban Emotion Analytics
-*Digital FUTURES workshop · Group project · 2026*
+*Digital FUTURES workshop · Group project · 2026 · 📝 Working paper in preparation*
 
 - Connected walking EEG, GPS tracks, street-view imagery, semantic segmentation, and pedestrian proximity.
 - Processed **2,842 timestamped observations** and modelled emotion labels using Random Forest with SHAP interpretation.
