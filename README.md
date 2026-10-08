@@ -10,25 +10,6 @@ I explore how people **perceive cities, find their way, and make spatial decisio
 
 [📬 Email](mailto:rui.gu.24@alumni.ucl.ac.uk) · [🔗 LinkedIn](https://www.linkedin.com/in/rui-g-a47929292/)
 
-## 🔍 Current Research
-
-### 🧭 Urban wayfinding in layered cities
-
-*Proposed research direction*
-
-- **Setting:** layered pedestrian networks connecting streets, elevated walkways, underground spaces, and buildings, with Hong Kong as the intended empirical context.
-- **Core interest:** sequential imageability — how environmental cues support orientation across a journey, especially when cues disappear or become ambiguous at spatial transitions.
-- **Human evidence:** uncertainty, hesitation, and route revision in relation to cue continuity.
-- **Design goal:** evaluate whether human-grounded VLM-agent simulations can help diagnose wayfinding problems and compare interventions.
-
-### 🤖 Vision-language models and urban preferences
-
-*Ongoing experimental work*
-
-- **Question:** do vision-language models express coherent preferences over street-view images?
-- **Approach:** pairwise image comparisons, presentation-order controls, and utility modelling.
-- **Broader motivation:** understand when, and under what human-grounded validation conditions, VLM agents can inform urban design.
-
 ## 🚀 Selected Work
 
 ### 🧠 Sensing Space: Multi-Modal Urban Emotion Analytics
